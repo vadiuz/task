@@ -1,7 +1,8 @@
 ---
-- hosts: dcontainer
+- hosts: dockercontainer
   user: taskman
   sudo: yes
 
   roles:
+    - docker
     - nginx
