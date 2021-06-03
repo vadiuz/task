@@ -1,0 +1,12 @@
+# roles/nginx/templates/index.html.j2
+<html>
+    <body>
+        <div>
+            <pre>
+                CPU Core: {{ ansible_processor_cores }}
+                RAM: {{ ansible_memtotal_mb }}
+                Disk System: {{ ansible_devices }}
+            </pre>
+        </div>
+    </body>
+</html>
