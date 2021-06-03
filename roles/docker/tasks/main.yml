@@ -1,4 +1,12 @@
 # roles/nginx/docker/main.yml
 ---
-- name: Docker Start
-
+- name: Start Docker container
+  docker_container:
+    name: universe
+    image: ubuntu:20.04
+    networks:
+      - name: TestNet
+        ipv4_address: "192.168.10.10"
+    remote_user: taskman
+    become: yes
+    become_method: sudo
