@@ -17,5 +17,5 @@
   template: src=nginx.conf.j2 dest=/etc/nginx/sites-enabled/ansible owner=www-data group=www-data
   notify: reload nginx
 
-- name: Create index.html file
+- name: Create index.html file by template
   template: src=index.html.j2 dest=/usr/share/nginx/html/index.html owner=www-data group=www-data
