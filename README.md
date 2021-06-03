@@ -1,1 +1,1 @@
-Test task for DevOps
+Test task DevOps 
