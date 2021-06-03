@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: dcontainer
   user: taskman
   sudo: yes
 
